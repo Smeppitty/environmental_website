@@ -24,6 +24,18 @@
     font-size: 1.5em;
   }
 
+  fancy {
+    font-size: 3em;
+    font-family: cursive;
+    font-style: italic;
+  }
+
+  t {
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+
   .body {
     margin: 0cm;
     padding-top: 1cm;
@@ -140,4 +152,16 @@
   #nav ul {
     display: inline-block;
     list-style-type: none;
-}
+  }
+
+  .column {
+    float: left;
+  }
+
+  .column.side {
+    width: 40%;
+  }
+
+  .column.middle {
+    width: 60%;
+  }
