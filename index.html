@@ -8,24 +8,25 @@
     <script src="src/script.js"></script>
   </head>
 
-    <body>
-    <nav class="nav">
+  <body>
+    <nav class="topnav">
       <a href="/" class="active">Home</a>
-      <a href="/resources">Resources</a>      
-    </div>
-    <div style = "background-image: url(img/baggie.jpg); background-size: 100%;">
-
+      <a href="/resources">Resources</a>  
+    </nav>
+    <div style = "background-image: url(img/pain.png); background-size: 100%; background-repeat:no-repeat">    
     <div class="body">
       <div class="center">
-        <h1>Percent of DEAD ANIMALS you MONSTER</h1>
-        <div id="progress">
-          <div id="Animalbar">0%</div>
-          <div id="Waterbar">0%</div>
-          <div id="Airbar">0%</div>
-        </div>
+        <h1>Animals Killed</h1>
+        <div class = "counter" max ="100000" click-count = "0">0</div>
+        <h1>Oil Used in Production</h1>
+        <div class = "counter" max = "12000000" click-count = "0">0</div>
+        <h1>Plastic Bags In Ocean</h1>
+        <div class = "counter" max = "300000000" click-count = "0">0</div>
         <br>
-        <button onclick="move('Animalbar')">Add Plastic</button>
-    </div>
+        <button onclick="counter(365)">Add 1 Day of Plastic Bags</button>
+        <button onclick="counter(12)">Add 1 Month of Plastic Bags</button>
+       </div>
+      </div>
     </div>
   </body>
 </html>
