@@ -16,7 +16,9 @@
       <div class="center">
         <h1>Percent of DEAD ANIMALS you MONSTER</h1>
         <div id="progress">
-          <div id="bar">10%</div>
+          <div id="Animalbar">0%</div>
+          <div id="Waterbar">0%</div>
+          <div id="Airbar">0%</div>
         </div>
         <br>
         <button onclick="move()">Add Plastic</button>
@@ -25,12 +27,15 @@
         <script>
           var width = 0;
         
-        function move() {
-          var elem = document.getElementById("bar");
+        function move(ID) {
+          var elem = document.getElementById(ID);
             if (width < 100) {
               width+=10;
               elem.style.width = width + '%';
               elem.innerHTML = width * 1 + '%';
+            }
+            if(width == 100){
+              //pop up
             }
           
         }

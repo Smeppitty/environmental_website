@@ -1,7 +1,7 @@
 :root {
     --bg0: #f5fbff;
     --bg1: #7593f6;
-    --fg0: #EFEFD4;
+    --fg0: #0c0c0b;
     --hl-bg: #35ac62;
   }
 
@@ -89,6 +89,20 @@
     cursor: pointer;
     margin: 5px;
     text-align: center;
+  }
+
+  #Progress { 
+    width: 100%;
+    background-color: rgb(136, 35, 35);
+  }
+
+  #Bar {
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
   }
 
   .grid-container {
