@@ -1,5 +1,5 @@
 :root {
-    --bg0: #f5fbff;
+    --bg0: #f5fff5;
     --bg1: #7593f6;
     --fg0: #0c0c0b;
     --hl-bg: #35ac62;
@@ -10,6 +10,7 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg0);
     color: var(--fg0);
+    
   }
 
   h1 {
@@ -24,8 +25,21 @@
     font-size: 1.5em;
   }
 
+  fancy {
+    font-size: 3em;
+    font-family: cursive;
+    font-style: italic;
+  }
+
+  t {
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+
   .body {
-    margin: 2cm;
+    margin: 0cm;
+    padding-top: 1cm;
     padding-bottom: 2cm;
   }
 
@@ -109,12 +123,12 @@
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: var(--bg0);
-    padding: 10px;
+    padding: 0px;
   }
   .grid-item {
     background-color: var(--bg0);
     border: var(--bg0);
-    padding: 20px;
+    padding: 10px;
     font-size: 1.5em;
     text-align: center;
   }
@@ -131,4 +145,24 @@
     text-align: center;
     line-height: 30px;
     color: white;
+  }
+
+  #nav{
+    text-align: center;
+  }
+  #nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  .column {
+    float: left;
+  }
+
+  .column.side {
+    width: 40%;
+  }
+
+  .column.middle {
+    width: 60%;
   }
