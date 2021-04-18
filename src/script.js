@@ -52,7 +52,9 @@ function setProgress(ratio) {
 	var elem = document.getElementById('bar');
 	  if (width < 100) {
 		  width=(ratio*100).toFixed(2);
+		  if(width >= 100)
+		  	width = 100;
 		  elem.style.width = width + '%';
-		  elem.innerHTML = width + '%';
+		  elem.innerHTML = width + '% of a year';
 		}
   	}
