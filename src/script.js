@@ -30,6 +30,8 @@ function counter(divisor) {
 
       if (count >= target) {
 			  counter.innerText = target;
+        const ratio = (Mclicks*30 + Dclicks)/360;
+				setProgress(ratio);
 			  //if total target was not reached, and if current value is not below daily value, then set current value to the daily value
 			}else if (count < newNum) {
 				// Add inc to count and output in counter
@@ -38,7 +40,7 @@ function counter(divisor) {
 				setTimeout(updateCount, 1);
 			} else {
 				counter.innerText = newNum;
-				const ratio = count/target;
+				const ratio = (Mclicks*30 + Dclicks)/360;
 				setProgress(ratio);
 			}
 		};
