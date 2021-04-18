@@ -96,7 +96,7 @@
     background-color: rgb(136, 35, 35);
   }
 
-  #Bar {
+  #Animalbar {
     width: 0%;
     height: 30px;
     background-color: #4CAF50;
@@ -125,7 +125,7 @@
   }
   
   #bar {
-    width: 10%;
+    width: 0%;
     height: 30px;
     background-color: #4CAF50;
     text-align: center;
