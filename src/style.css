@@ -1,5 +1,5 @@
 :root {
-    --bg0: #f5fbff;
+    --bg0: #f5fff5;
     --bg1: #7593f6;
     --fg0: #0c0c0b;
     --hl-bg: #35ac62;
@@ -132,3 +132,11 @@
     line-height: 30px;
     color: white;
   }
+
+  #nav{
+    text-align: center;
+  }
+  #nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
