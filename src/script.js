@@ -1,4 +1,5 @@
-var clicks = 0
+var clicks = 0;
+var width = 0;
 
 function counter(daysInYear) {
 
@@ -23,10 +24,21 @@ function counter(daysInYear) {
 				counter.innerText = count + inc;
 				// Call function every ms
 				setTimeout(updateCount, 1);
-			} else { 
+			} else {
 				counter.innerText = subtarget*clicks;
+				const ratio = count/target;
+				setProgress(ratio);
 			}
 		};
 		updateCount();
 	});
 }
+
+function setProgress(ratio) {
+	var elem = document.getElementById('bar');
+	  if (width < 100) {
+		  width=(ratio*100).toFixed(2);
+		  elem.style.width = width + '%';
+		  elem.innerHTML = width + '%';
+		}
+  	}
